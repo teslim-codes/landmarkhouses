@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landmark - Tenant Application Form</title>
+
+    <link rel="stylesheet" href=".//css/style.css">
+</head>
+
+<body>
+
+    <main class="page-wrapper">
+
+        <div class="form-container">
+
+            <!-- LOGO -->
+            <div class="logo-container">
+                <div class="logo-box">
+                    <div class="logo-text">Landmark</div>
+                    <div class="logo-subtitle">REAL ESTATE</div>
+                </div>
+            </div>
+
+
+            <!-- FORM -->
+            <form id="applicationForm">
+
+                <!-- FORM TITLE -->
+                <div class="form-heading">
+                    <h1>
+                        TENANT APPOINTMENT AND APPLYING
+                        <br>
+                        APPLICATION FORM
+                    </h1>
+                </div>
+
+
+                <!-- ZIP CODE -->
+                <div class="form-group">
+
+                    <label for="propertyZip">
+                        Zip code of property you're applying for:
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="propertyZip"
+                        name="propertyZip"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- VIEWING DATE -->
+                <div class="form-group">
+
+                    <label for="viewingDate">
+                        Preferable viewing date and time:
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="viewingDate"
+                        name="viewingDate"
+                        required
+                    >
+
+                    <small>Date</small>
+
+                </div>
+
+
+                <!-- VIEWING TIME -->
+                <div class="form-group">
+
+                    <label>
+                        Time <span>*</span>
+                    </label>
+
+                    <div class="time-row">
+
+                        <input
+                            type="time"
+                            id="viewingTime"
+                            name="viewingTime"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- MOVE IN DATE -->
+                <div class="form-group">
+
+                    <label for="moveInDate">
+                        Target date to move in:
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="moveInDate"
+                        name="moveInDate"
+                        required
+                    >
+
+                    <small>Date</small>
+
+                </div>
+
+
+                <!-- BASIC INFORMATION -->
+                <div class="section-title">
+                    <h2>APPLICANT BASIC INFORMATION</h2>
+                </div>
+
+
+                <!-- APPLICANT NAME -->
+                <div class="form-group">
+
+                    <label>
+                        Applicant Name: <span>*</span>
+                    </label>
+
+                    <div class="name-row">
+
+                        <div>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                required
+                            >
+
+                            <small>First Name</small>
+                        </div>
+
+
+                        <div>
+                            <input
+                                type="text"
+                                id="middleName"
+                                name="middleName"
+                            >
+
+                            <small>Middle Name</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="last-name">
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            required
+                        >
+
+                        <small>Last Name</small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email: <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
+
+                    <small>example@example.com</small>
+
+                </div>
+
+
+                <!-- PHONE -->
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number: <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(000) 000-0000"
+                        required
+                    >
+
+                    <small>
+                        Please enter a valid phone number.
+                    </small>
+
+                </div>
+
+
+                <!-- DATE OF BIRTH -->
+                <div class="form-group">
+
+                    <label for="dob">
+                        Date of birth: <span>*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required
+                    >
+
+                    <small>Date</small>
+
+                </div>
+
+
+                <!-- ADDRESS -->
+                <div class="address-section">
+
+                    <div class="form-group">
+
+                        <label>
+                            Applicant current address:
+                            <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            required
+                        >
+
+                        <small>Street Address</small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="city"
+                            name="city"
+                            required
+                        >
+
+                        <small>City</small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="state"
+                            name="state"
+                            required
+                        >
+
+                        <small>State / Province</small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="text"
+                            id="postalCode"
+                            name="postalCode"
+                            required
+                        >
+
+                        <small>Postal / Zip Code</small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <select
+                            id="country"
+                            name="country"
+                            required
+                        >
+
+                            <option value="United States">
+                                United States
+                            </option>
+
+                            <option value="Canada">
+                                Canada
+                            </option>
+
+                            <option value="United Kingdom">
+                                United Kingdom
+                            </option>
+
+                            <option value="Nigeria">
+                                Nigeria
+                            </option>
+
+                            <option value="Australia">
+                                Australia
+                            </option>
+
+                        </select>
+
+                        <small>Country</small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ANNUAL INCOME -->
+                <div class="form-group income-group">
+
+                    <label for="income">
+                        Annual income:
+                    </label>
+
+                    <div class="currency-input">
+
+                        <span>$</span>
+
+                        <input
+                            type="number"
+                            id="income"
+                            name="income"
+                            min="0"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- GENERAL -->
+                <div class="section-title">
+                    <h2>GENERAL</h2>
+                </div>
+
+
+                <!-- SMOKE -->
+                <div class="radio-group">
+
+                    <label>
+                        Do you smoke? <span>*</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="smoke"
+                            value="Yes"
+                            required
+                        >
+                        <span>Yes</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="smoke"
+                            value="No"
+                        >
+                        <span>No</span>
+                    </label>
+
+                </div>
+
+
+                <!-- GUARANTOR -->
+                <div class="radio-group">
+
+                    <label>
+                        Do you have a guarantor? <span>*</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="guarantor"
+                            value="Yes"
+                            required
+                        >
+                        <span>Yes</span>
+                    </label>
+
+                    <label class="radio-option">
+                        <input
+                            type="radio"
+                            name="guarantor"
+                            value="No"
+                        >
+                        <span>No</span>
+                    </label>
+
+                </div>
+
+
+                <!-- PET -->
+                <div class="form-group">
+
+                    <label for="pet">
+                        Do you intend to keep any pet?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pet"
+                        name="pet"
+                    >
+
+                    <small>
+                        If yes, number of pet and type:
+                    </small>
+
+                </div>
+
+
+                <!-- DEPOSIT -->
+                <div class="form-group">
+
+                    <label for="deposit">
+                        How much will you be able to pay for deposit
+                        if your application was approved?
+                        <span>*</span>
+                    </label>
+
+                    <div class="currency-input">
+
+                        <span>$</span>
+
+                        <input
+                            type="number"
+                            id="deposit"
+                            name="deposit"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+                    <small>Fully refundable:</small>
+
+                </div>
+
+
+                <!-- TENANCY -->
+                <div class="form-group">
+
+                    <label for="tenancy">
+                        Desire length of tenancy:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="tenancy"
+                        name="tenancy"
+                    >
+
+                </div>
+
+
+                <!-- APPLICATION FEE -->
+                <div class="section-title fee-title">
+
+                    <h2>
+                        REFUNDABLE APPLICATION FEE
+                    </h2>
+
+                </div>
+
+
+                <div class="fee-information">
+
+                    <p>
+                        (i) To fixed/booked appointment
+                    </p>
+
+                    <p>
+                        (ii) To know serious and interested applicant
+                    </p>
+
+                    <p>
+                        (iii) To review submission immediately
+                    </p>
+
+                    <p class="note">
+                        NOTE;
+                    </p>
+
+                    <p>
+                        cash/Cheque were not accepted!
+                    </p>
+
+                    <p>
+                        A refundable $100 application fee is required
+                        to book your viewing appointment, just to know
+                        how sure you are and to fixed your appointment
+                        time and date properly for you and it will fully
+                        refund back after viewing the property either
+                        interested or not.
+                    </p>
+
+                </div>
+
+
+                <!-- SUBMISSION -->
+                <div class="section-title">
+
+                    <h2>
+                        BY SUBMITTING THIS APPLICATION
+                    </h2>
+
+                </div>
+
+
+                <!-- PAYMENT -->
+                <div class="radio-group">
+
+                    <label>
+                        How would you like to make payments for the
+                        non refundable application fee $100?
+                        <span>*</span>
+                    </label>
+
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="Apple Pay"
+                            required
+                        >
+
+                        <span>Apple pay</span>
+
+                    </label>
+
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="Chime"
+                        >
+
+                        <span>Chime</span>
+
+                    </label>
+
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="Zelle"
+                        >
+
+                        <span>Zelle</span>
+
+                    </label>
+
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="Paypal"
+                        >
+
+                        <span>Paypal</span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- AGREEMENT 1 -->
+                <div class="agreement">
+
+                    <span class="required">*</span>
+
+                    <label class="agreement-option">
+
+                        <input
+                            type="radio"
+                            name="agreement1"
+                            value="yes"
+                            required
+                        >
+
+                        <span>
+                            I agree to you disclosing the reference
+                            replies to the landlord/s of the property
+                            for which I am applying.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- AGREEMENT 2 -->
+                <div class="agreement">
+
+                    <span class="required">*</span>
+
+                    <label class="agreement-option">
+
+                        <input
+                            type="radio"
+                            name="agreement2"
+                            value="yes"
+                            required
+                        >
+
+                        <span>
+                            I understand that this does not represent
+                            offer or contract of any nature.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- AGREEMENT 3 -->
+                <div class="agreement">
+
+                    <span class="required">*</span>
+
+                    <label class="agreement-option">
+
+                        <input
+                            type="radio"
+                            name="agreement3"
+                            value="yes"
+                            required
+                        >
+
+                        <span>
+                            I agree to make $100 payment for the
+                            refundable application fees.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- AGREEMENT 4 -->
+                <div class="agreement">
+
+                    <span class="required">*</span>
+
+                    <label class="agreement-option">
+
+                        <input
+                            type="radio"
+                            name="agreement4"
+                            value="yes"
+                            required
+                        >
+
+                        <span>
+                            I agree to make $100 payment for the
+                            refundable application fees.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- SIGNATURE -->
+                <div class="signature-section">
+
+                    <label>
+                        Signature
+                    </label>
+
+                    <div class="signature-box">
+
+                        <canvas id="signaturePad"></canvas>
+
+                        <button
+                            type="button"
+                            id="clearSignature"
+                        >
+                            Clear
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    SUBMIT
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="./java/javas.js" defer></script>
+
+</body>
+</html>

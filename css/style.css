@@ -1,0 +1,884 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f2f7;
+    color: #292d33;
+    font-size: 11px;
+}
+
+.page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 760px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 20px 28px 30px;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo-box {
+    width: 105px;
+    height: 78px;
+    background: #fff;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    color: #a68b25;
+}
+
+.logo-subtitle {
+    margin-top: 1px;
+    font-size: 5px;
+    letter-spacing: 1px;
+    color: #9a9a9a;
+}
+
+
+/* ==========================================
+   FORM HEADING
+========================================== */
+
+.form-heading {
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 8px;
+    margin-bottom: 22px;
+}
+
+.form-heading h1 {
+    font-size: 10px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #25282c;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+.form-group label,
+.radio-group > label {
+    display: block;
+    color: #292d33;
+    font-size: 10px;
+    line-height: 1.35;
+    margin-bottom: 7px;
+}
+
+.form-group label span,
+.radio-group label span,
+.required {
+    color: #bd2929;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group select {
+    width: 100%;
+    height: 31px;
+
+    padding: 0 7px;
+
+    border: 1px solid #d6d9dd;
+    border-radius: 3px;
+
+    outline: none;
+    background: #fff;
+
+    color: #30343a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #7c94a8;
+
+    box-shadow:
+        0 0 0 2px rgba(80, 120, 150, 0.08);
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 7px;
+    color: #555;
+}
+
+.form-group input::placeholder {
+    color: #8a8a8a;
+}
+
+
+/* ==========================================
+   TIME
+========================================== */
+
+.time-row {
+    width: 100%;
+}
+
+.time-row input {
+    width: 100%;
+}
+
+
+/* ==========================================
+   NAME
+========================================== */
+
+.name-row {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 7px;
+}
+
+.name-row input {
+    width: 100%;
+}
+
+.last-name {
+    width: 100%;
+    margin-top: 7px;
+}
+
+
+/* ==========================================
+   SECTION TITLES
+========================================== */
+
+.section-title {
+    width: 100%;
+
+    text-align: center;
+
+    border-bottom: 1px solid #dcdcdc;
+
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+    display: inline-block;
+
+    position: relative;
+    top: 7px;
+
+    padding: 0 16px;
+
+    background: #fff;
+
+    color: #292d33;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.fee-title {
+    margin-top: 36px;
+}
+
+
+/* ==========================================
+   ADDRESS
+========================================== */
+
+.address-section {
+    width: 100%;
+}
+
+
+/* ==========================================
+   CURRENCY
+========================================== */
+
+.currency-input {
+    width: 100%;
+    height: 31px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #d6d9dd;
+    border-radius: 3px;
+
+    background: #fff;
+
+    overflow: hidden;
+}
+
+.currency-input span {
+    width: 27px;
+
+    padding-left: 8px;
+
+    color: #555;
+    font-size: 9px;
+}
+
+.currency-input input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none !important;
+    outline: none;
+
+    padding: 0 7px 0 0;
+
+    box-shadow: none !important;
+
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   RADIO BUTTONS
+========================================== */
+
+.radio-group {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.radio-group > label:first-child {
+    margin-bottom: 6px;
+}
+
+.radio-option {
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 6px;
+
+    min-height: 18px;
+
+    margin-bottom: 2px;
+
+    cursor: pointer;
+
+    color: #555 !important;
+
+    font-size: 9px !important;
+}
+
+.radio-option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 12px;
+    height: 12px;
+
+    min-width: 12px;
+
+    border: 1px solid #cfd3d6;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"]:checked {
+    border-color: #6b737b;
+}
+
+.radio-option input[type="radio"]:checked::after {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    left: 3px;
+    top: 3px;
+
+    border-radius: 50%;
+
+    background: #5d6268;
+}
+
+
+/* ==========================================
+   FEE INFORMATION
+========================================== */
+
+.fee-information {
+    color: #404449;
+
+    font-size: 9px;
+
+    line-height: 1.65;
+
+    margin-bottom: 32px;
+}
+
+.fee-information p {
+    margin-bottom: 5px;
+}
+
+.fee-information .note {
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   AGREEMENTS
+========================================== */
+
+.agreement {
+    display: grid;
+
+    grid-template-columns: 9px 1fr;
+
+    gap: 5px;
+
+    margin-bottom: 25px;
+}
+
+.agreement .required {
+    font-size: 10px;
+}
+
+.agreement-option {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+    color: #4c5054;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    cursor: pointer;
+}
+
+.agreement-option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 12px;
+    height: 12px;
+
+    min-width: 12px;
+
+    margin-top: 1px;
+
+    border: 1px solid #cfd3d6;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    position: relative;
+}
+
+.agreement-option input[type="radio"]:checked::after {
+    content: "";
+
+    width: 5px;
+    height: 5px;
+
+    position: absolute;
+
+    top: 3px;
+    left: 3px;
+
+    background: #555;
+
+    border-radius: 50%;
+}
+
+
+/* ==========================================
+   SIGNATURE
+========================================== */
+
+.signature-section {
+    width: 100%;
+
+    margin-top: 32px;
+    margin-bottom: 35px;
+}
+
+.signature-section > label {
+    display: block;
+
+    font-size: 10px;
+
+    color: #333;
+
+    margin-bottom: 8px;
+}
+
+.signature-box {
+    position: relative;
+
+    width: 100%;
+    max-width: 420px;
+
+    height: 120px;
+
+    border: 1px solid #d7dadd;
+
+    border-radius: 3px;
+
+    background: #fff;
+
+    overflow: hidden;
+}
+
+#signaturePad {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    cursor: crosshair;
+
+    touch-action: none;
+}
+
+.signature-box::after {
+    content: "";
+
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+
+    bottom: 25px;
+
+    height: 1px;
+
+    background: #dedede;
+
+    pointer-events: none;
+}
+
+#clearSignature {
+    position: absolute;
+
+    right: 7px;
+    bottom: 4px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #7d858d;
+
+    font-size: 7px;
+
+    cursor: pointer;
+
+    z-index: 3;
+}
+
+
+/* ==========================================
+   SUBMIT
+========================================== */
+
+.submit-btn {
+    width: 100%;
+
+    height: 31px;
+
+    border: none;
+    border-radius: 2px;
+
+    color: #fff;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            rgba(0, 120, 115, 0.35),
+            rgba(0, 70, 70, 0.35)
+        ),
+        linear-gradient(
+            135deg,
+            #006d71,
+            #00a59b,
+            #006c70,
+            #002e3b
+        );
+
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.2);
+
+    transition:
+        transform 0.15s ease,
+        opacity 0.2s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .form-container {
+        max-width: 680px;
+
+        padding:
+            25px
+            35px
+            40px;
+    }
+
+    .logo-box {
+        width: 120px;
+        height: 85px;
+    }
+
+    .logo-text {
+        font-size: 19px;
+    }
+
+    .form-heading h1 {
+        font-size: 11px;
+    }
+
+    .form-group label,
+    .radio-group > label {
+        font-size: 11px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group input[type="time"],
+    .form-group select,
+    .currency-input {
+        height: 36px;
+    }
+
+    .section-title h2 {
+        font-size: 11px;
+    }
+
+    .radio-option,
+    .agreement-option {
+        font-size: 10px !important;
+    }
+
+}
+
+
+/* ==========================================
+   DESKTOP
+========================================== */
+
+@media (min-width: 901px) {
+
+    body {
+        background: #eceef3;
+    }
+
+    .form-container {
+        max-width: 760px;
+
+        padding:
+            25px
+            45px
+            45px;
+
+        box-shadow:
+            0 0 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo-box {
+        width: 125px;
+        height: 90px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group input[type="time"],
+    .form-group select,
+    .currency-input {
+        height: 39px;
+    }
+
+    .submit-btn {
+        height: 35px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        background: #fff;
+        font-size: 10px;
+    }
+
+    .form-container {
+        width: 100%;
+
+        padding:
+            20px
+            9px
+            20px;
+
+        box-shadow: none;
+    }
+
+    .logo-container {
+        margin-bottom: 24px;
+    }
+
+    .logo-box {
+        width: 95px;
+        height: 70px;
+    }
+
+    .logo-text {
+        font-size: 15px;
+    }
+
+    .logo-subtitle {
+        font-size: 4px;
+    }
+
+    .form-heading {
+        margin-bottom: 20px;
+    }
+
+    .form-heading h1 {
+        font-size: 8.5px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label,
+    .radio-group > label {
+        font-size: 8px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group input[type="time"],
+    .form-group select {
+        height: 29px;
+
+        font-size: 8px;
+
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .form-group small {
+        font-size: 6px;
+    }
+
+    .section-title {
+        margin-top: 31px;
+        margin-bottom: 22px;
+    }
+
+    .section-title h2 {
+        font-size: 8.5px;
+        padding: 0 10px;
+    }
+
+    .name-row {
+        gap: 5px;
+    }
+
+    .radio-group {
+        margin-bottom: 26px;
+    }
+
+    .radio-option {
+        font-size: 8px !important;
+        min-height: 17px;
+    }
+
+    .radio-option input[type="radio"],
+    .agreement-option input[type="radio"] {
+        width: 11px;
+        height: 11px;
+        min-width: 11px;
+    }
+
+    .radio-option input[type="radio"]:checked::after,
+    .agreement-option input[type="radio"]:checked::after {
+        width: 5px;
+        height: 5px;
+
+        left: 2px;
+        top: 2px;
+    }
+
+    .fee-information {
+        font-size: 8px;
+        line-height: 1.65;
+    }
+
+    .agreement-option {
+        font-size: 8px;
+        line-height: 1.35;
+    }
+
+    .agreement {
+        margin-bottom: 24px;
+    }
+
+    .signature-box {
+        max-width: 100%;
+        height: 112px;
+    }
+
+    .signature-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .signature-section > label {
+        font-size: 8px;
+    }
+
+    .submit-btn {
+        height: 30px;
+        font-size: 8px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .form-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .logo-box {
+        width: 90px;
+        height: 68px;
+    }
+
+    .form-heading h1 {
+        font-size: 8px;
+    }
+
+    .section-title h2 {
+        font-size: 8px;
+    }
+
+    .fee-information {
+        font-size: 7.5px;
+    }
+
+    .agreement-option {
+        font-size: 7.5px;
+    }
+
+}
